@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Data</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #fdfbfb, #ebedee);
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .biodata-container {
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            animation: fadeIn 1s ease-in-out;
+            border-top: 8px solid #007bff;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            background: linear-gradient(90deg, #007bff, #ff5722);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #007bff, 0 0 10px #007bff;
+            }
+            100% {
+                text-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722;
+            }
+        }
+
+        .info {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .info span {
+            font-weight: bold;
+            color: #000;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            color: #444;
+            font-size: 14px;
+            line-height: 1.6;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        ul li:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, #007bff, #ff5722);
+            margin: 20px 0;
+            border: none;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .biodata-container {
+                padding: 15px 20px;
+            }
+
+            .info {
+                font-size: 14px;
+            }
+
+            ul li {
+                font-size: 13px;
+            }
+
+            .image-container img {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-container">
+            <img src="https://imgs.search.brave.com/LmFYl0jE1PmkaDqs8ECwScXT-VuTD_arOsy-LvOfz3Q/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzY2LzE0LzI0/LzM2MF9GXzU2NjE0/MjQyMl9kUHM5RDFN/TDdaOW9lSlFJZ0hT/VjhNZG9mWkJZVmIy/TC5qcGc" alt="Left Side Image">
+        </div>
+        <div class="biodata-container">
+            <h1>Bio-Data</h1>
+            <div class="info"><span>Name:</span> Km Kanchan Maurya</div>
+            <div class="info"><span>Father's Name:</span> Shri Parashuram Maurya</div>
+            <div class="info"><span>Mother's Name:</span> Shrimati Prabhawati Devi</div>
+            <hr class="divider">
+            <div class="info"><span>Date of Birth:</span> 1st January 1995</div>
+            <div class="info"><span>Height:</span> 153.5 Cm</div>
+            <div class="info"><span>Complexion:</span> Whitish</div>
+            <div class="info"><span>Diet:</span> Vegetarian</div>
+            <div class="info"><span>Languages Known:</span> Hindi, English & Bhojpuri</div>
+            <hr class="divider">
+            <div class="info"><span>Educational Qualification:</span> B.Sc With PCM Stream</div>
+            <div class="info"><span>Technical Qualification:</span> Polytechnic in Computer Science & Engineering</div>
+            <div class="info"><span>Computer Course:</span> "O" Level & CCC Certificate</div>
+            <div class="info"><span>Hobbies:</span> Reading & Teaching</div>
+            <hr class="divider">
+            <div class="info"><span>Government Service:</span></div>
+            <ul>
+                <li>Served as a Jail Warden in UP Police Department at District Jail, Ambedkar Nagar</li>
+                <li>Presently Serving as a Computer Operator Grade "A" in Commercial (Sales) Tax Department at Varanasi (UP)</li>
+            </ul>
+            <div class="info"><span>Permanent Address:</span> Vill-Malera, Post-Govindpur, Tehshil-Belthra Road, Dist-Ballia (U.P.)-221716</div>
+            <hr class="divider">
+            <div class="info"><span>Sister's Name:</span> Ranjana Maurya (M.A), Married</div>
+            <ul>
+                <li>Arvind Maurya (BTC, B.ED, Primary School Teacher) - Mobile No. 9452658008</li>
+                <li>Vinay Kumar Maurya (B.Tech.) Officer in Govt. Organisation - Mobile No. 9336577077</li>
+                <li>Shiv Kumar Maurya (M.A., BTC), Manager of Own School - Mobile No. 8853838438</li>
+            </ul>
+            <div class="info"><span>Brother's Name & Status:</span></div>
+            <ul>
+                <li>Mamata Maurya (BTC, Primary School Teacher)</li>
+                <li>Vinita Maurya (BTC, Primary School Teacher)</li>
+            </ul>
+            <div class="footer">
+                <p>Made with ❤️ by Interactive Bio-Data Viewer</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="https://imgs.search.brave.com/LmFYl0jE1PmkaDqs8ECwScXT-VuTD_arOsy-LvOfz3Q/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA1LzY2LzE0LzI0/LzM2MF9GXzU2NjE0/MjQyMl9kUHM5RDFN/TDdaOW9lSlFJZ0hT/VjhNZG9mWkJZVmIy/TC5qcGc" alt="Right Side Image">
+        </div>
+    </div>
+</body>
+</html>

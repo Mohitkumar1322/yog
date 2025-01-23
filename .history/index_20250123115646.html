@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Bio-Data Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #fdfbfb, #ebedee);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Bio-Data Form</h1>
+        <form id="biodataForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required value="Km Kanchan Maurya">
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required value="1995-01-01">
+            </div>
+
+            <div class="form-group">
+                <label for="height">Height (in cm):</label>
+                <input type="number" id="height" placeholder="Enter your height" required value="153.5">
+            </div>
+
+            <div class="form-group">
+                <label for="complexion">Complexion:</label>
+                <input type="text" id="complexion" placeholder="Complexion" required value="Whitish">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Permanent Address:</label>
+                <textarea id="address" rows="4" required>Vill-Malera, Post-Govindpur, Tehshil-Belthra Road, Dist-Ballia (U.P.)-221716</textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="languages">Languages Known:</label>
+                <input type="text" id="languages" placeholder="Languages" required value="Hindi, English & Bhojpuri">
+            </div>
+
+            <div class="form-group">
+                <label for="qualification">Educational Qualification:</label>
+                <input type="text" id="qualification" placeholder="Qualification" required value="B.Sc With PCM Stream">
+            </div>
+
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <input type="text" id="hobbies" placeholder="Your hobbies" required value="Reading & Teaching">
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div class="footer">
+            <p>Made with ❤️ by Interactive Bio-Data Form</p>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('biodataForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Form submitted successfully!');
+        });
+    </script>
+</body>
+</html>

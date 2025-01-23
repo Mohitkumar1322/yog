@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-Data</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #fdfbfb, #ebedee);
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;  /* Ensure body covers full height */
+            margin: 0;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1000px;
+            overflow: hidden;
+        }
+
+        .biodata-container {
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+            border-top: 8px solid #007bff;
+            width: 90%;
+            max-width: 600px;
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+            animation: rainbow-border 1s linear infinite;
+        }
+
+        /* Rainbow border animation */
+        @keyframes rainbow-border {
+            0% {
+                border: 4px solid red;
+            }
+            14% {
+                border: 4px solid orange;
+            }
+            28% {
+                border: 4px solid yellow;
+            }
+            42% {
+                border: 4px solid green;
+            }
+            57% {
+                border: 4px solid blue;
+            }
+            71% {
+                border: 4px solid indigo;
+            }
+            85% {
+                border: 4px solid violet;
+            }
+            100% {
+                border: 4px solid red;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            background: linear-gradient(90deg, #007bff, #ff5722);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #007bff, 0 0 10px #007bff;
+            }
+            100% {
+                text-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722;
+            }
+        }
+
+        .info {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #555;
+            word-wrap: break-word;  /* Ensures words wrap within bounds */
+            overflow-wrap: break-word;
+        }
+
+        .info span {
+            font-weight: bold;
+            color: #000;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            color: #444;
+            font-size: 14px;
+            line-height: 1.6;
+            transition: transform 0.3s, background-color 0.3s;
+            word-wrap: break-word;
+        }
+
+        ul li:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, #007bff, #ff5722);
+            margin: 20px 0;
+            border: none;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #777;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .biodata-container {
+                width: 100%;
+                padding: 15px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            .info {
+                font-size: 14px;
+            }
+
+            ul li {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="biodata-container">
+            <h1>Bio-Data</h1>
+            <div class="info"><span>Name:</span> Yogesh Kumar Maurya</div>
+            <div class="info"><span>Father's Name:</span> Shri Munna Prasad Maurya</div>
+            <div class="info"><span>Father's Occupation:</span> Retired Army Officer with 30 years of distinguished service in the Indian Army, currently serving as an invigilator for competitive exams.</div>
+            <div class="info"><span>Mother's Name:</span> Shrimati Lalmati Devi</div>
+            <div class="info"><span>Mother's Occupation:</span> Housewife</div>
+            <hr class="divider">
+            <div class="info"><span>Date of Birth:</span> 23 June 1996</div>
+            <div class="info"><span>Height:</span> 163 cm</div>
+            <div class="info"><span>Diet:</span> Vegetarian</div>
+            <div class="info"><span>Languages Known:</span> Hindi, English</div>
+            <hr class="divider">
+            <div class="info"><span>Educational Qualification:</span> B.Sc with PCB Stream</div>
+            <ul>
+                <li>B.Sc with PCB Stream (IGNOU)</li>
+                <li>Intermediate from Army Public School Noida</li>
+                <li>High School from Army Public School Noida</li>
+            </ul>
+            <div class="info"><span>Hobbies:</span> Reading Novels, Trading, Playing Games</div>
+            <hr class="divider">
+            <div class="info"><span>Private Service:</span></div>
+            <ul>
+                <li>A passionate stock market trader, skilled in daily analysis, risk management, and executing strategies for consistent financial growth.</li>
+                <li>Full-time Stock Trader</li>
+            </ul>
+            <div class="info"><span>Permanent Address:</span> Kalyan Kunj Sector 49 Noida UP</div>
+            <hr class="divider">
+            <div class="info"><span>Sister's Name:</span> Vandana Maurya (Unmarried)</div>
+            <ul>
+                <li>Chartered Accountant, cleared CA in 2023, currently working at Deloitte</li>
+                <li>Intermediate from Army Public School Noida</li>
+            </ul>
+            <div class="info"><span>Brother's Name:</span> Mohit Kumar (Unmarried)</div>
+            <ul>
+                <li>Software Engineer, currently working in the tech industry.</li>
+                <li>Intermediate from Modern School Noida</li>
+            </ul>
+            <div class="footer">
+                <p>Made with ❤️  Jai Shree Ram</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
